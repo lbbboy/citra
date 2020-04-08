@@ -155,6 +155,7 @@ struct Values {
     u16 frame_limit;
     bool custom_refresh_rate;
     int screen_refresh_rate;
+    bool sharper_distant_objects;
     std::string texture_filter_name;
 
     LayoutOption layout_option;
