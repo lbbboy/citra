@@ -75,6 +75,13 @@
         <string>Emulation</string>
        </property>
        <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="toggle_use_force_indexed">
+          <property name="text">
+           <string>Force-validate indexed PICA registers</string>
+          </property>
+         </widget>
+        </item>
         <item row="1" column="0">
          <widget class="QCheckBox" name="toggle_frame_limit">
           <property name="text">
