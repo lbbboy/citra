@@ -144,7 +144,7 @@ void SetCurrentRomPath(const std::string& path);
 
 // Returns a pointer to a string with a Citra data dir in the user's home
 // directory. To be used in "multi-user" mode (that is, installed).
-const std::string& GetUserPath(UserPath path);
+const std::string& GetUserPath(UserPath path, const std::string& new_path = "");
 
 // Replaces install-specific paths with standard placeholders, and back again
 std::string SerializePath(const std::string& input, bool is_saving);
