@@ -31,8 +31,12 @@ Directory::Directory(std::unique_ptr<FileSys::DirectoryBackend>&& backend,
 Directory::Directory() : ServiceFramework("", 1), path(""), backend(nullptr) {
     static const FunctionInfo functions[] = {
         // clang-format off
+        {0x000100C6, nullptr, "Dummy1"},
+        {0x040100C4, nullptr, "Control"},
         {0x08010042, &Directory::Read, "Read"},
         {0x08020000, &Directory::Close, "Close"},
+        {0x08030040, nullptr, "SetPriority"},
+        {0x08040000, nullptr, "GetPriority"},
         // clang-format on
     };
     RegisterHandlers(functions);
